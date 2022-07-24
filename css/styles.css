@@ -1,0 +1,61 @@
+:root {   /* guarda variables para llamar en cualquier momento con : var(Nombre de variable) */
+    --primario: #1073BA;
+    --segundario: #00DA55;
+    --gris: #3B3B3B;
+    --blanco: #FFFFFF;
+    --negro: #1F1E1E;
+    --grisclaro: #e1e1e1;
+
+    --separacion: 5rem;
+
+    --fuentePrincipal: 'Roboto', sans-serif;
+    --fuenteSecundaria: 'Lato', sans-serif;
+}
+
+html {
+    box-sizing: border-box;     /* Va en todos los proyectos */
+    font-size: 62.5%;  /* Equivalencia pixeles a rem 1rem=10px */
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
+/* Globales */
+.contenedor {
+    max-width: 120rem; /* Ocupa maximo 1200 pixeles de la pantalla */
+    width: 90%;  /* Si supera los 1200 solo ocupa el 90% del total */
+    margin: o auto;  /* Centrar contenedor */
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    font-family: var(--fuenteSecundaria);
+    margin: calc( var(--separacion) /2 ) 0;
+}
+h1 {
+    font-size: 4.4rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%; /* Imagenes responsivas para que no se salga del bloque */
+    display: block;
+}
+
+
+/* Utilidades */
+.text-center {  /* clase para centrar el texto */
+    text-align: center;
+}
